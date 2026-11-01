@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Finanzas en pareja — Finanzas</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💗</text></svg>">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<svg style="position:absolute;width:0;height:0;overflow:hidden" aria-hidden="true">
+<defs>
+<symbol id="icon-heart" viewBox="0 0 24 24" fill="currentColor"><path d="M12 21s-6.7-4.35-9.3-8.2C.9 9.8 1.6 6.6 4.3 5.6c2-.75 4.1.1 5.1 1.9.2.35.4.7.6 1 .2-.3.4-.65.6-1 1-1.8 3.1-2.65 5.1-1.9 2.7 1 3.4 4.2 1.6 7.2C18.7 16.65 12 21 12 21Z"/></symbol>
+<symbol id="icon-home" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 11.5 12 4l8 7.5"/><path d="M6 10.2V20h5v-5.2h2V20h5v-9.8"/></symbol>
+<symbol id="icon-receipt" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3h12v18l-2.5-1.7L13 21l-2-1.7-2 1.7L6.5 19.3 4.5 21V6a3 3 0 0 1 1.5-2.6"/><path d="M8.5 8.2h7M8.5 12h7M8.5 15.8h4"/></symbol>
+<symbol id="icon-wallet" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="6.5" width="18" height="12" rx="2.4"/><path d="M3 10.2h18"/><circle cx="16.3" cy="14.3" r="1"/></symbol>
+<symbol id="icon-list" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M9.5 6.5h9M9.5 12h9M9.5 17.5h9"/><path d="M4.3 6.5l.9.9 1.5-1.8M4.3 12l.9.9 1.5-1.8M4.3 17.5l.9.9 1.5-1.8"/></symbol>
+<symbol id="icon-trend" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 16.5 9.5 11l3.3 3.3L20 6.5"/><path d="M14.5 6h5.5v5.5"/></symbol>
+<symbol id="icon-settings" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M12 3.2v2.4M12 18.4v2.4M5 6.3l1.7 1.4M17.3 16.3 19 17.7M3.2 12h2.4M18.4 12h2.4M5 17.7l1.7-1.4M17.3 7.7 19 6.3"/></symbol>
+<symbol id="icon-bank" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 10 12 4.2 20 10"/><path d="M5.2 10v8.8M9.4 10v8.8M14.6 10v8.8M18.8 10v8.8"/><path d="M3.5 19.3h17"/></symbol>
+<symbol id="icon-euro" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M15.5 6.8a5.8 5.8 0 1 0 0 10.4"/><path d="M5.8 10.2h6.6M5.8 13.6h6"/></symbol>
+<symbol id="icon-coin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="7.6"/><path d="M12 8.3v7.4M9.3 10.3h5.4M9.7 13.6h4.6"/></symbol>
+<symbol id="icon-cash" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="18" height="10.5" rx="2.2"/><circle cx="12" cy="12.2" r="2.3"/></symbol>
+<symbol id="icon-refresh" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20 11a8 8 0 0 0-14.9-3.6M4 13a8 8 0 0 0 14.9 3.6"/><path d="M20 4.5v4.5h-4.5M4 19.5V15h4.5"/></symbol>
+<symbol id="icon-trash" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 7h14M9 7V5.2A1.2 1.2 0 0 1 10.2 4h3.6A1.2 1.2 0 0 1 15 5.2V7m-8.5 0 .9 12.2A1.4 1.4 0 0 0 8.8 20.5h6.4a1.4 1.4 0 0 0 1.4-1.3L17.5 7"/></symbol>
+<symbol id="icon-plus" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></symbol>
+<symbol id="icon-x" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M6 6l12 12M18 6 6 18"/></symbol>
+<symbol id="icon-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9l6 6 6-6"/></symbol>
+<symbol id="icon-up" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M9 7h8v8"/></symbol>
+<symbol id="icon-down" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M7 7 17 17M17 9V17H9"/></symbol>
+<symbol id="icon-target" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="4.2"/><circle cx="12" cy="12" r="0.6" fill="currentColor"/></symbol>
+<symbol id="icon-sparkle" viewBox="0 0 24 24" fill="currentColor"><path d="M12 3l1.4 5.6L19 10l-5.6 1.4L12 17l-1.4-5.6L5 10l5.6-1.4L12 3Z"/></symbol>
+<symbol id="icon-camera" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 8.5A1.5 1.5 0 0 1 5.5 7h2l1-2h7l1 2h2A1.5 1.5 0 0 1 20 8.5v9A1.5 1.5 0 0 1 18.5 19h-13A1.5 1.5 0 0 1 4 17.5Z"/><circle cx="12" cy="12.5" r="3.3"/></symbol>
+<symbol id="icon-swap" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 8h13l-3-3.5M20 16H7l3 3.5"/></symbol>
+</defs>
+</svg>
+
+<div class="app">
+  <aside class="sidebar">
+    <div class="marca">
+      <span class="marca-icono"><svg class="icon"><use href="#icon-heart"/></svg></span>
+      <div class="marca-texto"><strong>Finanzas en pareja</strong><span>Panel financiero</span></div>
+    </div>
+    <nav class="nav">
+      <button class="nav-btn activo" data-vista="inicio"><svg class="icon"><use href="#icon-home"/></svg><span>Inicio</span></button>
+      <button class="nav-btn" data-vista="gastos"><svg class="icon"><use href="#icon-receipt"/></svg><span>Gastos</span></button>
+      <button class="nav-btn" data-vista="ingresos"><svg class="icon"><use href="#icon-cash"/></svg><span>Ingresos</span></button>
+      <button class="nav-btn" data-vista="bolsillos"><svg class="icon"><use href="#icon-wallet"/></svg><span>Bolsillos</span></button>
+      <button class="nav-btn" data-vista="deudas"><svg class="icon"><use href="#icon-list"/></svg><span>Deudas</span></button>
+      <button class="nav-btn" data-vista="inversion"><svg class="icon"><use href="#icon-target"/></svg><span>Inversión</span></button>
+      <button class="nav-btn" data-vista="ahorro"><svg class="icon"><use href="#icon-trend"/></svg><span>Ahorro</span></button>
+      <button class="nav-btn" data-vista="ajustes"><svg class="icon"><use href="#icon-settings"/></svg><span>Ajustes</span></button>
+    </nav>
+    <div class="sidebar-footer">Datos guardados localmente en este equipo</div>
+  </aside>
+
+  <main class="main">
+
+    <!-- INICIO -->
+    <section class="vista activa" id="vista-inicio">
+      <div class="encabezado">
+        <div>
+          <div class="eyebrow">Panel de pareja</div>
+          <h1 id="saludo">Hola de nuevo</h1>
+          <div class="subt" id="fecha-hoy"></div>
+        </div>
+        <div class="selector-envoltura">
+          <select id="selector-mes-inicio"></select>
+        </div>
+      </div>
+
+      <div class="grid grid-4" id="tarjetas-tasas"></div>
+
+      <div class="espaciador"></div>
+
+      <div class="grid grid-4" id="tarjetas-resumen"></div>
+
+      <div class="espaciador"></div>
+
+      <div class="tarjeta grande" id="tarjeta-prediccion"></div>
+
+      <div class="espaciador"></div>
+
+      <div class="dos-columnas">
+        <div class="tarjeta grande">
+          <div class="tarjeta-titulo">
+            <h3>Gastos por categoría</h3>
+            <span class="tarjeta-subtitulo">Este mes</span>
+          </div>
+          <div class="grafico" style="height:260px"><canvas id="chart-categorias"></canvas></div>
+        </div>
+        <div class="tarjeta grande">
+          <div class="tarjeta-titulo"><h3>Últimos movimientos</h3></div>
+          <div class="lista" id="lista-ultimos"></div>
+        </div>
+      </div>
+
+      <div class="espaciador"></div>
+      <div class="tarjeta grande">
+        <div class="tarjeta-titulo">
+          <h3>Ingresos vs gastos</h3>
+          <span class="tarjeta-subtitulo">Últimos 6 meses</span>
+        </div>
+        <div class="grafico" style="height:260px"><canvas id="chart-tendencia"></canvas></div>
+      </div>
+    </section>
+
+    <!-- GASTOS -->
+    <section class="vista" id="vista-gastos">
+      <div class="encabezado">
+        <div><div class="eyebrow">Registro</div><h1>Gastos</h1></div>
+        <button class="btn btn-primario" id="btn-nuevo-gasto"><svg class="icon"><use href="#icon-plus"/></svg>Nuevo gasto</button>
+      </div>
+      <div class="tabs-secundarias">
+        <select id="filtro-mes-gastos"></select>
+        <select id="filtro-persona-gastos">
+          <option value="">Todos</option>
+          <option value="feli" class="n-feli">Pareja 1</option>
+          <option value="vale" class="n-vale">Pareja 2</option>
+          <option value="ambos">Ambos</option>
+        </select>
+        <select id="filtro-categoria-gastos"><option value="">Todas las categorías</option></select>
+      </div>
+      <div class="tarjeta grande">
+        <div class="lista" id="lista-gastos"></div>
+      </div>
+    </section>
+
+    <!-- INGRESOS -->
+    <section class="vista" id="vista-ingresos">
+      <div class="encabezado">
+        <div><div class="eyebrow">Registro</div><h1>Ingresos</h1></div>
+        <button class="btn btn-primario" id="btn-nuevo-ingreso"><svg class="icon"><use href="#icon-plus"/></svg>Nuevo ingreso</button>
+      </div>
+      <div class="grid grid-3" id="tarjetas-ingreso-fijo"></div>
+      <div class="espaciador chico"></div>
+      <div class="tabs-secundarias">
+        <select id="filtro-mes-ingresos"></select>
+      </div>
+      <div class="tarjeta grande">
+        <div class="lista" id="lista-ingresos"></div>
+      </div>
+    </section>
+
+    <!-- BOLSILLOS -->
+    <section class="vista" id="vista-bolsillos">
+      <div class="encabezado">
+        <div><div class="eyebrow">Cuentas y saldos</div><h1>Bolsillos</h1></div>
+        <div style="display:flex; gap:8px;">
+          <button class="btn btn-secundario" id="btn-nuevo-cambio"><svg class="icon"><use href="#icon-swap"/></svg>Cambiar divisa</button>
+          <button class="btn btn-primario" id="btn-nuevo-bolsillo"><svg class="icon"><use href="#icon-plus"/></svg>Nuevo bolsillo</button>
+        </div>
+      </div>
+      <div class="grid grid-4" id="tarjetas-cuentas"></div>
+      <div class="espaciador chico"></div>
+      <div class="tarjeta grande">
+        <div class="tarjeta-titulo"><h3>Cambios de divisa</h3><span class="tarjeta-subtitulo">No cuentan como ingreso ni gasto</span></div>
+        <div class="lista" id="lista-cambios"></div>
+      </div>
+    </section>
+
+    <!-- DEUDAS -->
+    <section class="vista" id="vista-deudas">
+      <div class="encabezado">
+        <div><div class="eyebrow">Compromisos</div><h1>Deudas</h1></div>
+        <div style="display:flex; gap:8px;">
+          <button class="btn btn-secundario" id="btn-nueva-cashea"><svg class="icon"><use href="#icon-coin"/></svg>Compra Cashea</button>
+          <button class="btn btn-primario" id="btn-nueva-deuda"><svg class="icon"><use href="#icon-plus"/></svg>Nueva deuda</button>
+        </div>
+      </div>
+      <div class="grid grid-3" id="tarjetas-deuda-resumen"></div>
+      <div class="espaciador chico"></div>
+      <div class="lista" id="lista-deudas"></div>
+    </section>
+
+    <!-- INVERSIÓN -->
+    <section class="vista" id="vista-inversion">
+      <div class="encabezado">
+        <div><div class="eyebrow">Negocio y fondos</div><h1>Inversión</h1></div>
+        <button class="btn btn-primario" id="btn-nueva-inversion"><svg class="icon"><use href="#icon-plus"/></svg>Nueva inversión</button>
+      </div>
+      <div class="lista" id="lista-inversiones"></div>
+      <p class="nota-disclaimer">Esto es solo un registro de lo que ustedes anotan: capital, ventas, costos y retiros. No proyecta ganancias ni recomienda dónde invertir.</p>
+    </section>
+
+    <!-- AHORRO -->
+    <section class="vista" id="vista-ahorro">
+      <div class="encabezado">
+        <div><div class="eyebrow">Metas con arrastre</div><h1>Ahorro</h1></div>
+      </div>
+      <div class="grid grid-3" id="tarjetas-ahorro"></div>
+      <div class="espaciador chico"></div>
+      <div class="tarjeta grande">
+        <div class="tarjeta-titulo">
+          <h3>Quincenas</h3>
+          <span class="tarjeta-subtitulo">Lo que falte de una quincena se suma a la meta de la siguiente</span>
+        </div>
+        <div class="lista" id="lista-quincenas"></div>
+      </div>
+      <div class="espaciador chico"></div>
+      <div class="tarjeta grande">
+        <div class="tarjeta-titulo">
+          <h3>Si mantienen este ritmo de ahorro</h3>
+          <span class="tarjeta-subtitulo">Proyección a 6 meses — acumulado, sin intereses ni inversión</span>
+        </div>
+        <div class="grafico" style="height:240px"><canvas id="chart-proyeccion-ahorro"></canvas></div>
+        <p class="nota-disclaimer">Esto es solo la suma de lo que ahorrarían mes a mes guardándolo, para planear — no es una recomendación de inversión.</p>
+      </div>
+      <div class="espaciador chico"></div>
+      <div class="tarjeta grande">
+        <div class="tarjeta-titulo">
+          <h3>Proyección de gasto por categoría</h3>
+          <span class="tarjeta-subtitulo">Lo ya gastado vs. lo que falta si sigue el ritmo</span>
+        </div>
+        <div class="grafico" style="height:260px"><canvas id="chart-prediccion"></canvas></div>
+      </div>
+      <div class="espaciador chico"></div>
+      <div class="tarjeta grande">
+        <div class="tarjeta-titulo"><h3>Historial de tasas</h3><span class="tarjeta-subtitulo">Últimos 30 días</span></div>
+        <div class="grafico" style="height:220px"><canvas id="chart-tasas-historial"></canvas></div>
+      </div>
+    </section>
+
+    <!-- AJUSTES -->
+    <section class="vista" id="vista-ajustes">
+      <div class="encabezado"><div><div class="eyebrow">Preferencias</div><h1>Ajustes</h1></div></div>
+
+      <div class="tarjeta grande">
+        <div class="tarjeta-titulo"><h3>Nombres</h3></div>
+        <div class="form-grid">
+          <div class="campo"><label>Nombre de la pareja 1</label><input id="ajuste-nombre-feli"></div>
+          <div class="campo"><label>Nombre de la pareja 2</label><input id="ajuste-nombre-vale"></div>
+        </div>
+      </div>
+
+      <div class="espaciador chico"></div>
+
+      <div class="tarjeta grande">
+        <div class="tarjeta-titulo"><h3>Ingresos fijos</h3></div>
+        <div class="form-grid">
+          <div class="campo"><label><span class="n-feli">Pareja 1</span>: monto por pago (USD)</label><input type="number" id="ajuste-feli-monto"></div>
+          <div class="campo"><label><span class="n-feli">Pareja 1</span>: frecuencia</label>
+            <select id="ajuste-feli-frecuencia"><option value="quincenal">Quincenal</option><option value="semanal">Semanal</option><option value="mensual">Mensual</option></select>
+          </div>
+          <div class="campo"><label><span class="n-vale">Pareja 2</span>: monto por pago (USD)</label><input type="number" id="ajuste-vale-monto"></div>
+          <div class="campo"><label><span class="n-vale">Pareja 2</span>: frecuencia</label>
+            <select id="ajuste-vale-frecuencia"><option value="semanal">Semanal</option><option value="quincenal">Quincenal</option><option value="mensual">Mensual</option></select>
+          </div>
+        </div>
+      </div>
+
+      <div class="espaciador chico"></div>
+
+      <div class="tarjeta grande">
+        <div class="tarjeta-titulo"><h3>Meta de ahorro</h3></div>
+        <div class="selector-modo" id="selector-modo-meta">
+          <button type="button" class="modo-btn" data-modo="pct">Porcentaje del ingreso</button>
+          <button type="button" class="modo-btn" data-modo="monto">Monto fijo mensual</button>
+        </div>
+        <div class="form-grid" style="margin-top:12px;">
+          <div class="campo" id="campo-meta-pct"><label>Porcentaje a ahorrar</label><input type="number" id="ajuste-meta-pct" min="0" max="100"></div>
+          <div class="campo" id="campo-meta-monto"><label>Monto fijo por mes (USD)</label><input type="number" id="ajuste-meta-monto" min="0"></div>
+        </div>
+      </div>
+
+      <div class="espaciador chico"></div>
+
+      <div class="tarjeta grande">
+        <div class="tarjeta-titulo"><h3>Categorías de gasto</h3></div>
+        <div class="lista-pills" id="lista-categorias"></div>
+        <div class="fila-agregar">
+          <input id="nueva-categoria" placeholder="Ej: Regalos">
+          <button class="btn btn-secundario btn-chico" id="btn-agregar-categoria">Agregar</button>
+        </div>
+      </div>
+
+      <div class="espaciador chico"></div>
+      <div style="display:flex; align-items:center; gap:12px;">
+        <button class="btn btn-primario" id="btn-guardar-ajustes">Guardar cambios</button>
+        <span id="ajustes-guardado" class="aviso-guardado">Guardado</span>
+      </div>
+    </section>
+
+  </main>
+</div>
+
+<div class="modal-fondo" id="modal-fondo">
+  <div class="modal" id="modal-contenido"></div>
+</div>
+
+<script src="vendor/chart.umd.min.js"></script>
+<script src="js/api.js"></script>
+<script src="js/charts.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

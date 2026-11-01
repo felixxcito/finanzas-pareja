@@ -1,0 +1,10 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "outputDirectory": "public",
+  "proxy": {
+    "entrypoint": "middleware.js"
+  },
+  "rewrites": [
+    { "source": "/api/:path*", "destination": "/api/handler?vercelPath=:path*" }
+  ]
+}
